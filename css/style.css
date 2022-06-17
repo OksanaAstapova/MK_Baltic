@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat:ital@0;1&display=swap");
+.products .products__slogan .products__slogan_title, .products .products__slogan, .products .products__titles, .main-section__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #24272e;
+  height: 100px;
+  width: 100vw;
+  z-index: 3;
+  box-shadow: 2px 2px 2px black;
+}
+.header .header__logo {
+  margin-left: 3%;
+}
+.header .header__logo img {
+  width: 200px;
+}
+.header .header__menu {
+  display: flex;
+  flex-direction: row;
+}
+.header .header__menu .header__menu_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "bernard-mt-condensed-regular", sans-serif;
+  font-size: 1.2em;
+  margin-right: 30px;
+  border: 2px #24272e solid;
+  width: 10vw;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+  transition: 0.5s;
+}
+.header .header__menu .header__menu_button:hover {
+  border: 2px #feda60 solid;
+}
+
+.main-section {
+  background-color: #24272e;
+  height: calc(100vh - 100px);
+  margin-top: 100px;
+}
+.main-section .main-section__wrapper {
+  display: flex;
+  height: 85%;
+}
+
+.main-section__left,
+.main-section__right {
+  width: 50%;
+  height: 100%;
+}
+
+.main-section__left {
+  display: flex;
+  overflow: hidden;
+}
+.main-section__left .main-section__left_title .main-section__left_h1 {
+  position: absolute;
+  display: flex;
+  font-family: "bernard-mt-condensed-regular", sans-serif;
+  font-size: 3em;
+  text-shadow: 1px 1px 2px black;
+  color: #feda60;
+  text-align: right;
+  width: 50%;
+}
+.main-section__left .main-section__left_img {
+  display: flex;
+  width: 100%;
+}
+
+.main-section__right {
+  justify-content: center;
+  background-color: #feda60;
+}
+.main-section__right .main-section__right_title {
+  width: 70%;
+}
+.main-section__right .main-section__right_info {
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 1.2em;
+  width: 100%;
+  color: #24272e;
+}
+
+.main-section__switch-arrows {
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+  margin-top: 1%;
+}
+.main-section__switch-arrows img {
+  width: 5vh;
+}
+
+/*----------------PRODUCTS----------*/
+.products {
+  height: calc(100vh - 100px);
+  display: flex;
+  color: #24272e;
+}
+.products .products__titles {
+  width: 30%;
+  gap: 6vh;
+  justify-content: center;
+  text-align: center;
+  padding-left: 3%;
+  background-color: #feda60;
+  cursor: pointer;
+}
+.products .products__titles div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "bernard-mt-condensed-regular", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  border: 3px #feda60 solid;
+  width: 65%;
+  height: 60px;
+  transition: 0.3s;
+}
+.products .products__titles div:hover {
+  border: 3px #ffffff solid;
+}
+.products .products__titles .products__title_active {
+  border: 3px #ffffff solid;
+  background-color: #ffffff;
+}
+.products .products__slogan {
+  width: 70%;
+  gap: 10%;
+  justify-content: center;
+}
+.products .products__slogan .products__slogan_title {
+  font-size: 2em;
+  font-family: "bernard-mt-condensed-regular", sans-serif;
+}
+.products .products__slogan .products__slogan_title .products__slogan_title_color {
+  color: #feda60;
+  text-shadow: 1px 1px 1px #24272e;
+}
+.products .products__slogan .products__slogan_motto {
+  width: 60%;
+}
+.products .products__slogan .products__slogan_motto p {
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 1.5em;
+  font-style: italic;
+  line-height: 5vh;
+}
+.products .products__info {
+  position: absolute;
+  background-color: #ffffff;
+  height: calc(100vh - 100px);
+  padding-left: 10px;
+  width: 67vw;
+  right: -100vw;
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 1.2em;
+  transition: 0.3s;
+}
+.products .products__info h1 {
+  color: #feda60;
+}
+.products .products__info_appear {
+  right: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
