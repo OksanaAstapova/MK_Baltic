@@ -1,6 +1,6 @@
 const bannersData = [
     {"name": "GRATINGS",
-    "img": "../assets/background/1_gratings.jpg",
+    "img": "assets/background/1_gratings.jpg",
     "alt": "Gratings"},
 
     {"name": "STAIR THREAD",
