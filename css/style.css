@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat:ital@0;1&display=swap");
-.products .products__slogan .products__slogan_title, .products .products__slogan, .products .products__titles, .main-section__right {
+.gallery .gallery__modal .gallery__modal_close-btn, .gallery .gallery__modal, .gallery .gallery__card-wrapper .gallery__card, .gallery, .products .products__slogan .products__slogan_title, .products .products__slogan, .products .products__titles, .main-section__right {
   display: flex;
   flex-direction: column;
 }
@@ -113,6 +113,7 @@
 }
 .products .products__titles {
   width: 30%;
+  height: calc(100vh - 100px);
   gap: 6vh;
   justify-content: center;
   text-align: center;
@@ -177,6 +178,92 @@
 }
 .products .products__info_appear {
   right: 0;
+}
+
+/*-----------gallery----------*/
+.gallery {
+  height: calc(100vh - 100px);
+  background-color: #24272e;
+  background-image: url(../assets/background/gallery-bgr.png);
+  color: #24272e;
+  justify-content: space-around;
+}
+.gallery .gallery__title {
+  color: #feda60;
+  font-family: "bernard-mt-condensed-regular", sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+.gallery .gallery__card-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.gallery .gallery__card-wrapper .gallery__card {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  width: 20vw;
+  height: 400px;
+  background-color: #ffffff;
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 1.2em;
+}
+.gallery .gallery__card-wrapper .gallery__card img,
+.gallery .gallery__card-wrapper .gallery__card p {
+  width: 95%;
+}
+.gallery .gallery__card-wrapper .gallery__card button {
+  width: 50%;
+  height: 10%;
+  background-color: #feda60;
+  border: none;
+  cursor: pointer;
+}
+.gallery .gallery__modal {
+  align-items: center;
+  position: fixed;
+  background-color: #feda60;
+  width: 100vw;
+  height: 65%;
+  bottom: -100%;
+  transition: 0.5s;
+}
+.gallery .gallery__modal .gallery__modal_close-btn {
+  width: 70px;
+  height: 40px;
+  background-color: #ffffff;
+  margin-left: 80vw;
+  cursor: pointer;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+}
+.gallery .gallery__modal .gallery__modal_close-btn img {
+  width: 50%;
+}
+.gallery .gallery__modal .gallery__modal_photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.gallery .gallery__modal .gallery__modal_photos img {
+  width: 25%;
+}
+.gallery .gallery__modal .gallery__modal_description {
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 2em;
+  color: #24272e;
+  width: 80%;
+}
+.gallery .gallery__modal_appear {
+  bottom: 0;
+}
+
+/*-----------PARTNERS----------*/
+.partners {
+  height: calc(100vh - 100px);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -134,6 +134,37 @@ button_steel.addEventListener("click", ()=>{
 })
 
 
+/*-----------------gallery------------------*/
 
+document.querySelector(".gallery__card_bridge > button").addEventListener("click", ()=>{
+
+    document.querySelector(".gallery__modal_bridge").classList.add("gallery__modal_appear");
+})
+
+document.querySelector(".gallery__card_heat > button").addEventListener("click", ()=>{
+
+    document.querySelector(".gallery__modal_heat").classList.add("gallery__modal_appear");
+})
+
+document.querySelector(".gallery__card_tower > button").addEventListener("click", ()=>{
+
+    document.querySelector(".gallery__modal_tower").classList.add("gallery__modal_appear");
+})
+
+document.querySelector(".gallery__card_plant > button").addEventListener("click", ()=>{
+
+    document.querySelector(".gallery__modal_plant").classList.add("gallery__modal_appear");
+})
+
+document.querySelectorAll(".gallery__modal_close-btn").forEach(k =>{
+
+    k.addEventListener("click", ()=> {
+
+        document.querySelectorAll(".gallery__modal").forEach(w => {
+
+            w.classList.remove("gallery__modal_appear");
+        })
+    })
+})
 
 
