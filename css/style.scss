@@ -29,6 +29,8 @@ $height-section:  calc(100vh - 100px);
     .header__logo{
 
         margin-left: 3%;
+        cursor: pointer;
+        transition: .5s;
 
         img{
         
@@ -36,11 +38,15 @@ $height-section:  calc(100vh - 100px);
         }
     }
 
+    .header__logo:hover{
+        transform: scale(1.2);
+    }
+
     .header__menu{
         display: flex;
         flex-direction: row;
         
-        .header__menu_button{
+        li{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -58,8 +64,13 @@ $height-section:  calc(100vh - 100px);
 
         }
 
-        .header__menu_button:hover{
+        li:hover{
             border: 2px $color-main solid;
+        }
+
+        li:active{
+
+            background-color: $color-main;
         }
 
     }
@@ -390,7 +401,7 @@ $height-section:  calc(100vh - 100px);
             color: $color-details;
             height: 50%;
             width: 50%;
-           
+            font-family: $font-main;
             .partners__card_img{
 
                 width: 50%;

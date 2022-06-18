@@ -18,15 +18,20 @@
 }
 .header .header__logo {
   margin-left: 3%;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .header .header__logo img {
   width: 200px;
+}
+.header .header__logo:hover {
+  transform: scale(1.2);
 }
 .header .header__menu {
   display: flex;
   flex-direction: row;
 }
-.header .header__menu .header__menu_button {
+.header .header__menu li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,8 +47,11 @@
   padding-top: 5px;
   transition: 0.5s;
 }
-.header .header__menu .header__menu_button:hover {
+.header .header__menu li:hover {
   border: 2px #feda60 solid;
+}
+.header .header__menu li:active {
+  background-color: #feda60;
 }
 
 .main-section {
@@ -283,6 +291,7 @@
   color: #ffffff;
   height: 50%;
   width: 50%;
+  font-family: "Montserrat", arial, sans-serif;
 }
 .partners .card-wrapper .partners__card .partners__card_img {
   width: 50%;

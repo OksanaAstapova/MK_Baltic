@@ -170,4 +170,41 @@ document.querySelectorAll(".gallery__modal_close-btn").forEach(k =>{
 
 /*------------scroll to section-----------*/
 
+document.querySelector(".header__menu_button-products").addEventListener("click", ()=>{
+
+    window.scrollTo({
+        top: 650,
+        left: 0,
+        behavior: 'smooth'});
+})
+
+document.querySelector(".header__menu_button-gallery").addEventListener("click", ()=>{
+
+    window.scrollTo({
+        top: 1307,
+        left: 0,
+        behavior: 'smooth'});
+})
+
+document.querySelector(".header__menu_button-partners").addEventListener("click", ()=>{
+
+    window.scrollTo({
+        top: 1962,
+        left: 0,
+        behavior: 'smooth'});
+})
+
+document.querySelector(".header__menu_button-contacts").addEventListener("click", ()=>{
+
+    document.querySelector(".contacts").scrollIntoView({block: "center", behavior: "smooth"});
+})
+
+document.querySelector(".header__logo").addEventListener("click", ()=>{
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'});
+})
+
 
