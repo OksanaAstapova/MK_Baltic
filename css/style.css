@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat:ital@0;1&display=swap");
-.gallery .gallery__modal .gallery__modal_close-btn, .gallery .gallery__modal, .gallery .gallery__card-wrapper .gallery__card, .gallery, .products .products__slogan .products__slogan_title, .products .products__slogan, .products .products__titles, .main-section__right {
+.partners, .gallery .gallery__modal .gallery__modal_close-btn, .gallery .gallery__modal, .gallery .gallery__card-wrapper .gallery__card, .gallery, .products .products__slogan .products__slogan_title, .products .products__slogan, .products .products__titles, .main-section__right {
   display: flex;
   flex-direction: column;
 }
@@ -264,6 +264,54 @@
 /*-----------PARTNERS----------*/
 .partners {
   height: calc(100vh - 100px);
+  align-items: center;
+}
+.partners .partners__title {
+  font-family: "bernard-mt-condensed-regular", sans-serif;
+  font-size: 1.8em;
+}
+.partners .card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 65vw;
+  height: 65vh;
+}
+.partners .card-wrapper .partners__card {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #24272e;
+  color: #ffffff;
+  height: 50%;
+  width: 50%;
+}
+.partners .card-wrapper .partners__card .partners__card_img {
+  width: 50%;
+}
+.partners .card-wrapper .partners__card .partners__card_img img {
+  height: 100%;
+  width: 100%;
+}
+.partners .card-wrapper .partners__card .partners__card_info {
+  width: 50%;
+}
+.partners .card-wrapper .partners__card .partners__card_info h1 {
+  color: #feda60;
+  font-family: "bernard-mt-condensed-regular", sans-serif;
+}
+.partners .card-wrapper .partners__card .partners__card_info h2 {
+  font-family: "Montserrat", arial, sans-serif;
+  font-style: italic;
+  color: grey;
+  margin-bottom: 20px;
+}
+.partners .card-wrapper .partners__card .partners__card_info a,
+.partners .card-wrapper .partners__card .partners__card_info h1,
+.partners .card-wrapper .partners__card .partners__card_info h2 {
+  margin-left: 15px;
+}
+.partners .card-wrapper .partners__card:nth-child(3),
+.partners .card-wrapper .partners__card:nth-child(4) {
+  flex-direction: row-reverse;
 }
 
 /*# sourceMappingURL=style.css.map */

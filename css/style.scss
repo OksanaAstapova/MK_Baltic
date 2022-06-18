@@ -329,6 +329,7 @@ $height-section:  calc(100vh - 100px);
                 justify-content: center;
                 align-items: center;
                 margin-top: -20px;
+                // box-shadow: 1px 1px 1px $color-back;
 
                 img{
                     width: 50%;
@@ -365,6 +366,70 @@ $height-section:  calc(100vh - 100px);
 .partners{
 
     height: $height-section;
+    @extend %flex-column;
+    align-items: center;
+    // background-color: gray;
+
+    .partners__title{
+
+        font-family: $font-heading;
+        font-size: 1.8em;
+    }
+
+    .card-wrapper{
+
+        display: flex;
+        flex-wrap: wrap;
+        width: 65vw;
+        height: 65vh;
+
+        .partners__card{
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: $color-back;
+            color: $color-details;
+            height: 50%;
+            width: 50%;
+           
+            .partners__card_img{
+
+                width: 50%;
+
+                img{
+                height: 100%;
+                width: 100%;}
+            }
+
+            .partners__card_info{
+
+                width: 50%;
+
+               h1{
+                color: $color-main;
+                font-family: $font-heading;
+            } 
+
+                h2{
+                    font-family: $font-main;
+                    font-style: italic;
+                    color: grey;
+                    margin-bottom: 20px;
+                }
+
+                a,
+                h1,
+                h2{
+                margin-left: 15px;
+                }
+            }
+            
+        }
+
+        .partners__card:nth-child(3),
+        .partners__card:nth-child(4){
+            flex-direction: row-reverse;
+        }
+    }
 }
 
 
