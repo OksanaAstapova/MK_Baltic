@@ -7,6 +7,7 @@ $color-main: #feda60;
 $color-back: #24272e;
 $color-details: #ffffff;
 
+
 $height-section:  calc(100vh - 100px);
 
 %flex-column{
@@ -262,7 +263,7 @@ $height-section:  calc(100vh - 100px);
 
 .gallery{
     height: $height-section;
-    background-color: $color-back;
+    background-color: #363c49;
     background-image: url(../assets/background/gallery-bgr.png);
     color: $color-back;
     @extend %flex-column;
@@ -447,7 +448,7 @@ $height-section:  calc(100vh - 100px);
 /*---------------contacts---------*/ 
 
 .contacts{
-    background-color: $color-back;
+    background-color: #363c49;
     @extend %flex-column;
     color: $color-details;
     align-items: center;

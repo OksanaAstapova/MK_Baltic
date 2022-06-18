@@ -194,7 +194,7 @@
 /*-----------gallery----------*/
 .gallery {
   height: calc(100vh - 100px);
-  background-color: #24272e;
+  background-color: #363c49;
   background-image: url(../assets/background/gallery-bgr.png);
   color: #24272e;
   justify-content: space-around;
@@ -328,7 +328,7 @@
 
 /*---------------contacts---------*/
 .contacts {
-  background-color: #24272e;
+  background-color: #363c49;
   color: #ffffff;
   align-items: center;
 }
