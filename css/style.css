@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Montserrat:ital@0;1&display=swap");
-.partners, .gallery .gallery__modal .gallery__modal_close-btn, .gallery .gallery__modal, .gallery .gallery__card-wrapper .gallery__card, .gallery, .products .products__slogan .products__slogan_title, .products .products__slogan, .products .products__titles, .main-section__right {
+.contacts, .partners, .gallery .gallery__modal .gallery__modal_close-btn, .gallery .gallery__modal, .gallery .gallery__card-wrapper .gallery__card, .gallery, .products .products__slogan .products__slogan_title, .products .products__slogan, .products .products__titles, .main-section__right {
   display: flex;
   flex-direction: column;
 }
@@ -312,6 +312,29 @@
 .partners .card-wrapper .partners__card:nth-child(3),
 .partners .card-wrapper .partners__card:nth-child(4) {
   flex-direction: row-reverse;
+}
+
+/*---------------contacts---------*/
+.contacts {
+  background-color: #24272e;
+  color: #ffffff;
+  align-items: center;
+}
+.contacts .contacts__info {
+  display: flex;
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 1.2em;
+  gap: 10vw;
+}
+.contacts .contacts__info h1 {
+  color: #feda60;
+  font-family: "bernard-mt-condensed-regular", sans-serif;
+}
+.contacts .contacts__logo {
+  width: 20vw;
+}
+.contacts .contacts__logo img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

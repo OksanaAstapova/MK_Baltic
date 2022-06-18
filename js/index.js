@@ -164,8 +164,10 @@ document.querySelectorAll(".gallery__modal_close-btn").forEach(k =>{
 
             w.classList.remove("gallery__modal_appear");
         })
-        
+
     })
 })
+
+/*------------scroll to section-----------*/
 
 

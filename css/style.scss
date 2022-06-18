@@ -432,6 +432,35 @@ $height-section:  calc(100vh - 100px);
     }
 }
 
+/*---------------contacts---------*/ 
+
+.contacts{
+    background-color: $color-back;
+    @extend %flex-column;
+    color: $color-details;
+    align-items: center;
+
+    .contacts__info{
+        display: flex;
+        font-family: $font-main;
+        font-size: 1.2em;
+        gap: 10vw;
+
+        h1{
+            color: $color-main;
+            font-family: $font-heading;
+        }
+    }
+
+    .contacts__logo{
+
+            width: 20vw;
+        img{
+            width: 100%;
+        }
+    }
+}
+
 
 
 
