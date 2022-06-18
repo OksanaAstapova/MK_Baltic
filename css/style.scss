@@ -107,11 +107,11 @@ $height-section:  calc(100vh - 100px);
         .main-section__left_h1{
             position: absolute;
             display: flex;
+            justify-content: flex-end;
             font-family: $font-heading;
             font-size: 3em;
             text-shadow: 1px 1px 2px black;
             color: $color-main;
-            text-align: right;
             width: 50%;
         }
     }
@@ -164,6 +164,9 @@ $height-section:  calc(100vh - 100px);
     height: $height-section;
     display: flex;
     color: $color-back;
+    width: 1OOvw;
+    overflow: hidden;
+    position: relative;
     
     .products__titles{
         @extend %flex-column;
@@ -208,9 +211,7 @@ $height-section:  calc(100vh - 100px);
         width: 70%;
         gap: 10%;
         justify-content: center;
-       
-
-    
+   
         .products__slogan_title{
     
             @extend %flex-column;

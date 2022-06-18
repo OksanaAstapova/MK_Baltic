@@ -77,11 +77,11 @@
 .main-section__left .main-section__left_title .main-section__left_h1 {
   position: absolute;
   display: flex;
+  justify-content: flex-end;
   font-family: "bernard-mt-condensed-regular", sans-serif;
   font-size: 3em;
   text-shadow: 1px 1px 2px black;
   color: #feda60;
-  text-align: right;
   width: 50%;
 }
 .main-section__left .main-section__left_img {
@@ -118,6 +118,9 @@
   height: calc(100vh - 100px);
   display: flex;
   color: #24272e;
+  width: 1OOvw;
+  overflow: hidden;
+  position: relative;
 }
 .products .products__titles {
   width: 30%;
