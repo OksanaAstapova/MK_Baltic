@@ -428,6 +428,7 @@
     color: gray;
   }
   .gallery .gallery__modal {
+    display: none;
     height: 100vh;
     overflow: scroll;
   }

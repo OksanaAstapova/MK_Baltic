@@ -603,6 +603,7 @@ $height-section:  calc(100vh - 100px);
 
         .gallery__modal{
 
+                display: none;
             height: 100vh;
             overflow: scroll;
 
