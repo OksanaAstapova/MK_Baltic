@@ -475,6 +475,21 @@
   .partners .card-wrapper .partners__card:nth-child(3) {
     flex-direction: row;
   }
+  .contacts .contacts__info {
+    flex-direction: column-reverse;
+    font-size: 1em;
+    gap: unset;
+  }
+  .contacts .contacts__info h1 {
+    text-align: center;
+    font-size: 2.2em;
+  }
+  .contacts .contacts__info .mobile-hide {
+    display: none;
+  }
+  .contacts .contacts__logo {
+    width: 50vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
