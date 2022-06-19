@@ -1,4 +1,12 @@
 const bannersData = [
+    {"name": "PIPELINE INSTALLATION WORKS",
+    "img": "assets/background/4_papeline.jpg",
+    "alt": "PIPELINE INSTALLATION WORKS"},
+
+    {"name": "STEEL CONSTRUCTION",
+    "img": "assets/background/5_steel.jpg",
+    "alt": "STEEL CONSTRUCTION"},
+
     {"name": "GRATINGS",
     "img": "assets/background/1_gratings.jpg",
     "alt": "Gratings"},
@@ -9,15 +17,7 @@ const bannersData = [
 
     {"name": "FASTENERS",
     "img": "assets/background/3_fasteners.jpg",
-    "alt": "FASTENERS"},
-
-    {"name": "PIPELINE INSTALLATION WORKS",
-    "img": "assets/background/4_papeline.jpg",
-    "alt": "PIPELINE INSTALLATION WORKS"},
-
-    {"name": "STEEL CONSTRUCTION",
-    "img": "assets/background/5_steel.jpg",
-    "alt": "STEEL CONSTRUCTION"}
+    "alt": "FASTENERS"}
 
 ]
 

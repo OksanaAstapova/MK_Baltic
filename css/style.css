@@ -27,9 +27,9 @@
 .header .header__logo:hover {
   transform: scale(1.2);
 }
-.header .burger {
+.header .burger-button {
   width: 50px;
-  margin-right: 3vw;
+  margin-right: 5vw;
   display: none;
 }
 .header .header__menu {
@@ -57,6 +57,10 @@
 }
 .header .header__menu li:active {
   background-color: #feda60;
+}
+
+.burger-menu {
+  display: none;
 }
 
 .main-section {
@@ -111,11 +115,19 @@
 .main-section__switch-arrows {
   display: flex;
   justify-content: space-evenly;
-  cursor: pointer;
   margin-top: 1%;
 }
 .main-section__switch-arrows img {
   width: 5vh;
+}
+.main-section__switch-arrows .main-section__switch-arrows_left:hover,
+.main-section__switch-arrows .main-section__switch-arrows_right:hover {
+  cursor: pointer;
+}
+.main-section__switch-arrows .main-section__switch-arrows_left:active,
+.main-section__switch-arrows .main-section__switch-arrows_right:active {
+  transform: translateY(5px);
+  transition: 0.5s;
 }
 
 /*----------------PRODUCTS----------*/
@@ -200,7 +212,7 @@
 /*-----------gallery----------*/
 .gallery {
   height: calc(100vh - 100px);
-  background-color: #363c49;
+  background-color: #24272e;
   background-image: url(../assets/background/gallery-bgr.png);
   color: #24272e;
   justify-content: space-around;
@@ -244,7 +256,8 @@
   width: 100vw;
   height: 65%;
   bottom: -100%;
-  transition: 0.5s;
+  transition: 0.3s;
+  z-index: 999;
 }
 .gallery .gallery__modal .gallery__modal_close-btn {
   width: 70px;
@@ -334,7 +347,7 @@
 
 /*---------------contacts---------*/
 .contacts {
-  background-color: #363c49;
+  background-color: #24272e;
   color: #ffffff;
   align-items: center;
 }
@@ -359,22 +372,47 @@
   .header .header__logo img {
     width: 40vw;
   }
-  .header .burger {
+  .header .burger-button {
     display: flex;
+    transition: 0.5s;
   }
   .header .header__menu {
     display: none;
   }
+  .burger-button_rotate {
+    transform: rotate(-90deg);
+  }
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #24272e;
+    color: gray;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    font-family: "bernard-mt-condensed-regular", sans-serif;
+    font-size: 1.8em;
+    margin-left: 100vw;
+    transition: 0.3s;
+  }
+  .burger-menu_appear {
+    margin-left: 0;
+  }
   .main-section .main-section__wrapper {
     flex-direction: column;
+    height: 90%;
   }
   .main-section .main-section__wrapper .main-section__left,
 .main-section .main-section__wrapper .main-section__right {
-    height: 50%;
     width: 100%;
+    height: 40%;
   }
   .main-section .main-section__wrapper .main-section__right {
     align-items: center;
+    height: 60%;
+    justify-content: flex-start;
   }
   .main-section .main-section__wrapper .main-section__left_h1 {
     font-size: 1.6em;
@@ -384,7 +422,7 @@
     text-align: center;
   }
   .main-section .main-section__wrapper .main-section__right_info {
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
   .products .products__slogan {
     gap: unset;
@@ -402,6 +440,7 @@
   .products .products__titles div {
     font-size: 0.6em;
     border: none;
+    width: 100%;
   }
   .products .products__info {
     font-size: 1em;
@@ -410,17 +449,28 @@
   .products .products__info h1 {
     font-size: 1.5em;
   }
+  .products .products__info img {
+    display: none;
+  }
   .gallery {
     height: unset;
   }
   .gallery .gallery__title {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   .gallery .gallery__card-wrapper {
     flex-direction: column;
   }
   .gallery .gallery__card-wrapper .gallery__card {
     width: 100%;
+    height: unset;
+    gap: unset;
+  }
+  .gallery .gallery__card-wrapper .gallery__card img {
+    display: none;
+  }
+  .gallery .gallery__card-wrapper .gallery__card button {
+    height: 30px;
   }
   .gallery .gallery__card-wrapper .gallery__card:nth-child(2),
 .gallery .gallery__card-wrapper .gallery__card:nth-child(4) {
@@ -428,7 +478,6 @@
     color: gray;
   }
   .gallery .gallery__modal {
-    display: none;
     height: 100vh;
     overflow: scroll;
   }
@@ -475,6 +524,9 @@
   }
   .partners .card-wrapper .partners__card:nth-child(3) {
     flex-direction: row;
+  }
+  .contacts {
+    height: calc(100vh - 100px);
   }
   .contacts .contacts__info {
     flex-direction: column-reverse;

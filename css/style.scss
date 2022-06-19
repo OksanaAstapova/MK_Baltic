@@ -43,9 +43,9 @@ $height-section:  calc(100vh - 100px);
         transform: scale(1.2);
     }
 
-    .burger{
+    .burger-button{
         width: 50px;
-        margin-right: 3vw;
+        margin-right: 5vw;
         display: none;
     }
 
@@ -81,6 +81,10 @@ $height-section:  calc(100vh - 100px);
         }
 
     }
+}
+
+.burger-menu{
+    display: none;
 }
 
 .main-section{
@@ -155,11 +159,23 @@ $height-section:  calc(100vh - 100px);
     
     display: flex;
     justify-content: space-evenly;
-    cursor: pointer;
     margin-top: 1%;
 
     img{
         width: 5vh;
+    }
+
+    .main-section__switch-arrows_left:hover,
+    .main-section__switch-arrows_right:hover{
+
+        cursor: pointer;
+
+    }
+
+    .main-section__switch-arrows_left:active,
+    .main-section__switch-arrows_right:active{
+        transform: translateY(5px);  
+        transition: 0.5s;  
     }
 }
 
@@ -270,7 +286,7 @@ $height-section:  calc(100vh - 100px);
 
 .gallery{
     height: $height-section;
-    background-color: #363c49;
+    background-color: $color-back;
     background-image: url(../assets/background/gallery-bgr.png);
     color: $color-back;
     @extend %flex-column;
@@ -336,7 +352,8 @@ $height-section:  calc(100vh - 100px);
             width: 100vw;
             height: 65%;
             bottom: -100%;
-            transition: 0.5s;
+            transition: 0.3s;
+            z-index: 999;
     
             .gallery__modal_close-btn{
                 width: 70px;
@@ -455,7 +472,7 @@ $height-section:  calc(100vh - 100px);
 /*---------------contacts---------*/ 
 
 .contacts{
-    background-color: #363c49;
+    background-color: $color-back;
     @extend %flex-column;
     color: $color-details;
     align-items: center;
@@ -492,30 +509,59 @@ $height-section:  calc(100vh - 100px);
             }
         }
 
-        .burger{
+        .burger-button{
 
             display: flex;
+            transition: .5s;
         }
         
         .header__menu{
             display: none;
+            
         }
 
    }
+   .burger-button_rotate{
+    transform: rotate(-90deg);
+   }
+
+     .burger-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-back;
+        color: gray;
+        position: fixed;
+        z-index: 10;
+        width: 100vw;
+        height: 100vh;
+        font-family: $font-heading;
+        font-size: 1.8em;
+        margin-left: 100vw;
+        transition: 0.3s;
+
+    }
+        .burger-menu_appear{
+            margin-left: 0;
+        }
+
    .main-section{
 
     .main-section__wrapper{
 
         flex-direction: column;
+        height: 90%;
 
         .main-section__left,
         .main-section__right{
-        height: 50%;
-        width: 100%;
+           width: 100%;
+           height: 40%;
         }
 
         .main-section__right{
             align-items: center;
+            height: 60%;
+            justify-content: flex-start;
 
         }
 
@@ -531,7 +577,7 @@ $height-section:  calc(100vh - 100px);
 
         .main-section__right_info{
 
-            font-size: 0.6em;
+            font-size: 0.8em;
         }
     }
 
@@ -561,6 +607,7 @@ $height-section:  calc(100vh - 100px);
             div{
                 font-size: 0.6em;
                 border: none;
+                width: 100%;
             }
         }
 
@@ -572,6 +619,8 @@ $height-section:  calc(100vh - 100px);
             h1{
                 font-size: 1.5em;
             }
+
+            img{display: none;}
         }
     }
 
@@ -581,7 +630,7 @@ $height-section:  calc(100vh - 100px);
 
         .gallery__title{
 
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
 
         .gallery__card-wrapper{
@@ -591,6 +640,16 @@ $height-section:  calc(100vh - 100px);
             .gallery__card{
 
                 width: 100%;
+                height: unset;
+                gap: unset;
+
+                img{
+                    display: none;
+                }
+
+                button{
+                    height: 30px;
+                }
             }
 
             .gallery__card:nth-child(2),
@@ -603,7 +662,6 @@ $height-section:  calc(100vh - 100px);
 
         .gallery__modal{
 
-                display: none;
             height: 100vh;
             overflow: scroll;
 
@@ -669,6 +727,8 @@ $height-section:  calc(100vh - 100px);
    }
 
    .contacts{
+
+    height: $height-section;
 
     .contacts__info{
 
