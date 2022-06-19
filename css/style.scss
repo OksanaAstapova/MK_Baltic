@@ -35,12 +35,18 @@ $height-section:  calc(100vh - 100px);
 
         img{
         
-            width: 200px;
+            width: 15vw;
         }
     }
 
     .header__logo:hover{
         transform: scale(1.2);
+    }
+
+    .burger{
+        width: 50px;
+        margin-right: 3vw;
+        display: none;
     }
 
     .header__menu{
@@ -138,7 +144,7 @@ $height-section:  calc(100vh - 100px);
     .main-section__right_info{
         font-family: $font-main;
         font-size: 1.2em;
-        width: 100%;
+        width: 95%;
         color: $color-back;
 
         
@@ -474,6 +480,65 @@ $height-section:  calc(100vh - 100px);
     }
 }
 
+@media (max-width: 700px) {
+    
+   .header{
+
+        .header__logo{
+
+            img{
+                width: 40vw;
+            }
+        }
+
+        .burger{
+
+            display: flex;
+        }
+        
+        .header__menu{
+            display: none;
+        }
+
+   }
+   .main-section{
+
+    .main-section__wrapper{
+
+        flex-direction: column;
+
+        .main-section__left,
+        .main-section__right{
+        height: 50%;
+        width: 100%;
+        }
+
+        .main-section__right{
+            align-items: center;
+
+        }
+
+        .main-section__left_h1{
+
+            font-size: 1.6em;
+            justify-content: center;
+            width: 100%;
+            bottom: 50%;
+            text-align: center;
+        }
+
+
+        .main-section__right_info{
+
+            font-size: 0.6em;
+        }
+    }
+
+   }
+  
+
+   
+}
 
 
 
