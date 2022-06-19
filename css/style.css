@@ -191,6 +191,7 @@
 }
 .products .products__info h1 {
   color: #feda60;
+  text-shadow: 1px 1px 1px #24272e;
 }
 .products .products__info_appear {
   right: 0;
@@ -384,6 +385,95 @@
   }
   .main-section .main-section__wrapper .main-section__right_info {
     font-size: 0.6em;
+  }
+  .products .products__slogan {
+    gap: unset;
+  }
+  .products .products__slogan .products__slogan_title {
+    font-size: 1.5em;
+  }
+  .products .products__slogan .products__slogan_motto {
+    width: 100%;
+  }
+  .products .products__titles {
+    padding-left: unset;
+    align-items: center;
+  }
+  .products .products__titles div {
+    font-size: 0.6em;
+    border: none;
+  }
+  .products .products__info {
+    font-size: 1em;
+    overflow: scroll;
+  }
+  .products .products__info h1 {
+    font-size: 1.5em;
+  }
+  .gallery {
+    height: unset;
+  }
+  .gallery .gallery__title {
+    font-size: 1.3em;
+  }
+  .gallery .gallery__card-wrapper {
+    flex-direction: column;
+  }
+  .gallery .gallery__card-wrapper .gallery__card {
+    width: 100%;
+  }
+  .gallery .gallery__card-wrapper .gallery__card:nth-child(2),
+.gallery .gallery__card-wrapper .gallery__card:nth-child(4) {
+    background-color: #24272e;
+    color: gray;
+  }
+  .gallery .gallery__modal {
+    height: 100vh;
+    overflow: scroll;
+  }
+  .gallery .gallery__modal .gallery__modal_close-btn {
+    margin-top: 0;
+    background: transparent;
+  }
+  .gallery .gallery__modal .gallery__modal_description {
+    font-size: 1em;
+  }
+  .gallery .gallery__modal .gallery__modal_photos {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+  .gallery .gallery__modal .gallery__modal_photos img {
+    width: 95%;
+  }
+  .partners {
+    height: unset;
+  }
+  .partners .partners__title {
+    font-size: 1.5em;
+  }
+  .partners .card-wrapper {
+    width: 95vw;
+    height: unset;
+  }
+  .partners .card-wrapper .partners__card {
+    height: unset;
+    width: unset;
+  }
+  .partners .card-wrapper .partners__card .partners__card_info h1 {
+    font-size: 1.3em;
+  }
+  .partners .card-wrapper .partners__card .partners__card_info h2 {
+    font-size: 1em;
+  }
+  .partners .card-wrapper .partners__card .partners__card_info a {
+    font-size: 0.8em;
+  }
+  .partners .card-wrapper .partners__card:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .partners .card-wrapper .partners__card:nth-child(3) {
+    flex-direction: row;
   }
 }
 

@@ -256,6 +256,7 @@ $height-section:  calc(100vh - 100px);
 
             h1{
                 color: $color-main;
+                text-shadow: 1px 1px 1px $color-back;
             }
         }
 
@@ -535,9 +536,136 @@ $height-section:  calc(100vh - 100px);
     }
 
    }
-  
 
-   
+   .products{
+
+        .products__slogan{
+
+            gap: unset;
+
+            .products__slogan_title {
+                font-size: 1.5em;
+
+                
+            }
+            .products__slogan_motto {
+                width: 100%;
+                }
+        } 
+        
+        .products__titles{
+
+            padding-left: unset;
+            align-items: center;
+
+            div{
+                font-size: 0.6em;
+                border: none;
+            }
+        }
+
+        .products__info{
+
+            font-size: 1em;
+            overflow: scroll;
+            
+            h1{
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .gallery{
+
+        height: unset;
+
+        .gallery__title{
+
+            font-size: 1.3em;
+        }
+
+        .gallery__card-wrapper{
+
+            flex-direction: column;
+
+            .gallery__card{
+
+                width: 100%;
+            }
+
+            .gallery__card:nth-child(2),
+            .gallery__card:nth-child(4){
+
+                background-color: $color-back;
+                color: gray;
+            }
+        }
+
+        .gallery__modal{
+
+            height: 100vh;
+            overflow: scroll;
+
+            .gallery__modal_close-btn{
+
+                margin-top: 0;
+                background: transparent;
+            }
+
+            .gallery__modal_description{
+
+                font-size: 1em;
+            }
+
+            .gallery__modal_photos{
+
+                flex-direction: column;
+                gap: 5px;
+                align-items: center;
+
+                img{
+                    width: 95%;
+                }
+            }
+        }
+    }
+
+   .partners{
+
+    height: unset;
+
+    .partners__title{
+
+        font-size: 1.5em;
+    }
+
+    .card-wrapper{
+
+        width: 95vw;
+        height:unset;
+
+        .partners__card{
+            height: unset;
+            width: unset;
+
+            .partners__card_info{
+
+                h1{font-size: 1.3em;}
+                h2{font-size: 1em;}
+                a{font-size: 0.8em;}
+
+            }
+        }
+
+        .partners__card:nth-child(2){
+            flex-direction: row-reverse;
+        }
+
+        .partners__card:nth-child(3){
+            flex-direction: row;
+        }
+    }
+   }
 }
 
 
