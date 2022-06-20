@@ -380,7 +380,7 @@
   }
   .header .burger-button {
     display: flex;
-    transition: 0.5s;
+    transition: 0.3s;
   }
   .header .header__menu {
     display: none;
@@ -393,7 +393,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #24272e;
-    color: gray;
+    color: #ffffff;
     position: fixed;
     z-index: 10;
     width: 100vw;
@@ -446,15 +446,17 @@
   .products .products__titles {
     padding-left: unset;
     align-items: center;
+    width: 32%;
   }
   .products .products__titles div {
-    font-size: 0.6em;
+    font-size: 0.7em;
     border: none;
     width: 100%;
   }
   .products .products__info {
     font-size: 1em;
     overflow: scroll;
+    width: 66vw;
   }
   .products .products__info h1 {
     font-size: 1.5em;
@@ -485,13 +487,17 @@
   .gallery .gallery__modal {
     height: 100vh;
     overflow: scroll;
+    bottom: 0;
+    right: -100%;
   }
   .gallery .gallery__modal .gallery__modal_close-btn {
     margin-top: 0;
     background: transparent;
+    width: 50px;
   }
   .gallery .gallery__modal .gallery__modal_description {
     font-size: 1em;
+    width: 70%;
   }
   .gallery .gallery__modal .gallery__modal_photos {
     flex-direction: column;
@@ -500,6 +506,9 @@
   }
   .gallery .gallery__modal .gallery__modal_photos img {
     width: 95%;
+  }
+  .gallery .gallery__modal_appear {
+    right: 0;
   }
   .partners {
     height: unset;

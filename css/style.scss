@@ -518,7 +518,7 @@ $height-section:  calc(100vh - 100px);
         .burger-button{
 
             display: flex;
-            transition: .5s;
+            transition: .3s;
         }
         
         .header__menu{
@@ -536,7 +536,7 @@ $height-section:  calc(100vh - 100px);
         flex-direction: column;
         align-items: center;
         background-color: $color-back;
-        color: gray;
+        color: $color-details;
         position: fixed;
         z-index: 10;
         width: 100vw;
@@ -617,9 +617,10 @@ $height-section:  calc(100vh - 100px);
 
             padding-left: unset;
             align-items: center;
+            width: 32%;
 
             div{
-                font-size: 0.6em;
+                font-size: 0.7em;
                 border: none;
                 width: 100%;
             }
@@ -629,6 +630,7 @@ $height-section:  calc(100vh - 100px);
 
             font-size: 1em;
             overflow: scroll;
+            width: 66vw;
             
             h1{
                 font-size: 1.5em;
@@ -673,16 +675,20 @@ $height-section:  calc(100vh - 100px);
 
             height: 100vh;
             overflow: scroll;
+            bottom: 0;
+            right: -100%;
 
             .gallery__modal_close-btn{
 
                 margin-top: 0;
                 background: transparent;
+                width: 50px;
             }
 
             .gallery__modal_description{
 
                 font-size: 1em;
+                width: 70%;
             }
 
             .gallery__modal_photos{
@@ -695,6 +701,10 @@ $height-section:  calc(100vh - 100px);
                     width: 95%;
                 }
             }
+        }
+
+        .gallery__modal_appear{
+            right: 0;
         }
     }
 
