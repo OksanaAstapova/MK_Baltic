@@ -60,6 +60,7 @@ const button_fastener = document.querySelector(".products__titles_fastener");
 const button_pipeline = document.querySelector(".products__titles_pipeline");
 const button_steel = document.querySelector(".products__titles_steel");
 
+
 button_gratings.addEventListener("click", ()=>{
     document.querySelector(".products__info_gratings").classList.toggle("products__info_appear");
     document.querySelector(".products__info_stair").classList.remove("products__info_appear");
@@ -72,7 +73,6 @@ button_gratings.addEventListener("click", ()=>{
     button_fastener.classList.remove("products__title_active");
     button_pipeline.classList.remove("products__title_active");
     button_steel.classList.remove("products__title_active");
-
 
 })
 

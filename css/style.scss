@@ -352,7 +352,7 @@ $height-section:  calc(100vh - 100px);
             // justify-content: center;
             align-items: center;
             position: fixed;
-            background-color: $color-main;
+            background-color:$color-details;
             // right: -100vw;
             // gap: 10vh;
             width: 100vw;
@@ -364,7 +364,7 @@ $height-section:  calc(100vh - 100px);
             .gallery__modal_close-btn{
                 width: 70px;
                 height: 40px;
-                background-color: $color-details;
+                background-color: $color-main;
                 margin-left: 80vw;
                 cursor: pointer;
                 position: absolute;
@@ -492,6 +492,10 @@ $height-section:  calc(100vh - 100px);
         h1{
             color: $color-main;
             font-family: $font-heading;
+        }
+
+        img{
+            width: 20px;
         }
     }
 

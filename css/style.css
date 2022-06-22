@@ -258,7 +258,7 @@
 .gallery .gallery__modal {
   align-items: center;
   position: fixed;
-  background-color: #feda60;
+  background-color: #ffffff;
   width: 100vw;
   height: 65%;
   bottom: -100%;
@@ -268,7 +268,7 @@
 .gallery .gallery__modal .gallery__modal_close-btn {
   width: 70px;
   height: 40px;
-  background-color: #ffffff;
+  background-color: #feda60;
   margin-left: 80vw;
   cursor: pointer;
   position: absolute;
@@ -366,6 +366,9 @@
 .contacts .contacts__info h1 {
   color: #feda60;
   font-family: "bernard-mt-condensed-regular", sans-serif;
+}
+.contacts .contacts__info img {
+  width: 20px;
 }
 .contacts .contacts__logo {
   width: 20vw;
