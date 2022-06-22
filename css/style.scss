@@ -15,6 +15,15 @@ $height-section:  calc(100vh - 100px);
     flex-direction: column;
 }
 
+.black-back{
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #24272ee4;
+    z-index: 5;
+}
+
 .header{
     display: flex;
     position: fixed;
