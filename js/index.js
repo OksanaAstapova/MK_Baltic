@@ -63,74 +63,77 @@ const button_steel = document.querySelector(".products__titles_steel");
 
 button_gratings.addEventListener("click", ()=>{
     document.querySelector(".products__info_gratings").classList.toggle("products__info_appear");
-    document.querySelector(".products__info_stair").classList.remove("products__info_appear");
-    document.querySelector(".products__info_fasteners").classList.remove("products__info_appear");
-    document.querySelector(".products__info_pipeline").classList.remove("products__info_appear");
-    document.querySelector(".products__info_steel").classList.remove("products__info_appear");
+
+    document.querySelectorAll(".products__info:not(.products__info_gratings)").forEach(div =>{
+        div.classList.remove("products__info_appear");
+    })
+
 
     button_gratings.classList.toggle("products__title_active");
-    button_stair.classList.remove("products__title_active");
-    button_fastener.classList.remove("products__title_active");
-    button_pipeline.classList.remove("products__title_active");
-    button_steel.classList.remove("products__title_active");
+    
+    document.querySelectorAll('.products__titles>div:not(.products__titles_gratings)').forEach(btn =>{
+        btn.classList.remove("products__title_active");
+    })
+
+
 
 })
 
 button_stair.addEventListener("click", ()=>{
-    document.querySelector(".products__info_gratings").classList.remove("products__info_appear");
     document.querySelector(".products__info_stair").classList.toggle("products__info_appear");
-    document.querySelector(".products__info_fasteners").classList.remove("products__info_appear");
-    document.querySelector(".products__info_pipeline").classList.remove("products__info_appear");
-    document.querySelector(".products__info_steel").classList.remove("products__info_appear");
+   
+    document.querySelectorAll(".products__info:not(.products__info_stair)").forEach(div =>{
+        div.classList.remove("products__info_appear");
+    })
 
-    button_gratings.classList.remove("products__title_active");
     button_stair.classList.toggle("products__title_active");
-    button_fastener.classList.remove("products__title_active");
-    button_pipeline.classList.remove("products__title_active");
-    button_steel.classList.remove("products__title_active");
+
+    document.querySelectorAll('.products__titles>div:not(.products__titles_stair)').forEach(btn =>{
+        btn.classList.remove("products__title_active");
+    })
 })
 
 button_fastener.addEventListener("click", ()=>{
-    document.querySelector(".products__info_gratings").classList.remove("products__info_appear");
-    document.querySelector(".products__info_stair").classList.remove("products__info_appear");
     document.querySelector(".products__info_fasteners").classList.toggle("products__info_appear");
-    document.querySelector(".products__info_pipeline").classList.remove("products__info_appear");
-    document.querySelector(".products__info_steel").classList.remove("products__info_appear");
+   
+    document.querySelectorAll(".products__info:not(.products__info_fasteners)").forEach(div =>{
+        div.classList.remove("products__info_appear");
+    })
 
-    button_gratings.classList.remove("products__title_active");
-    button_stair.classList.remove("products__title_active");
     button_fastener.classList.toggle("products__title_active");
-    button_pipeline.classList.remove("products__title_active");
-    button_steel.classList.remove("products__title_active");
+   
+    document.querySelectorAll('.products__titles>div:not(.products__titles_fastener)').forEach(btn =>{
+        btn.classList.remove("products__title_active");
+    })
 
 })
 
 button_pipeline.addEventListener("click", ()=>{
-    document.querySelector(".products__info_gratings").classList.remove("products__info_appear");
-    document.querySelector(".products__info_stair").classList.remove("products__info_appear");
-    document.querySelector(".products__info_fasteners").classList.remove("products__info_appear");
+    
     document.querySelector(".products__info_pipeline").classList.toggle("products__info_appear");
-    document.querySelector(".products__info_steel").classList.remove("products__info_appear");
 
-    button_gratings.classList.remove("products__title_active");
-    button_stair.classList.remove("products__title_active");
-    button_fastener.classList.remove("products__title_active");
+    document.querySelectorAll(".products__info:not(.products__info_pipeline)").forEach(div =>{
+        div.classList.remove("products__info_appear");
+    })
+
     button_pipeline.classList.toggle("products__title_active");
-    button_steel.classList.remove("products__title_active");  
-})
+    document.querySelectorAll('.products__titles>div:not(.products__titles_pipeline)').forEach(btn =>{
+        btn.classList.remove("products__title_active");
+    })})
 
 button_steel.addEventListener("click", ()=>{
-    document.querySelector(".products__info_gratings").classList.remove("products__info_appear");
-    document.querySelector(".products__info_stair").classList.remove("products__info_appear");
-    document.querySelector(".products__info_fasteners").classList.remove("products__info_appear");
-    document.querySelector(".products__info_pipeline").classList.remove("products__info_appear");
+   
     document.querySelector(".products__info_steel").classList.toggle("products__info_appear");
+   
+    document.querySelectorAll(".products__info:not(.products__info_steel)").forEach(div =>{
+        div.classList.remove("products__info_appear");
+    })
 
-    button_gratings.classList.remove("products__title_active");
-    button_stair.classList.remove("products__title_active");
-    button_fastener.classList.remove("products__title_active");
-    button_pipeline.classList.remove("products__title_active");
     button_steel.classList.toggle("products__title_active");
+
+    document.querySelectorAll('.products__titles>div:not(.products__titles_steel)').forEach(btn =>{
+        btn.classList.remove("products__title_active");
+    })
 })
 
 
